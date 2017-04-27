@@ -41,7 +41,7 @@
         android:layout_below="@+id/buttonBuscar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <TextView
             android:text="TextView"
@@ -63,12 +63,30 @@
             android:textSize="45sp" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             app:srcCompat="@mipmap/ic_launcher"
             android:id="@+id/imageViewAvatar"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textViewEmail"
+            android:layout_marginTop="11dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/listViewFollowers" />
     </RelativeLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBar"
+        android:visibility="gone" />
 
 </RelativeLayout>
