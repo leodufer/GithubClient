@@ -56,7 +56,8 @@ public class FollowerListAdaptar extends BaseAdapter {
 
         loginTextView.setText(u.getLogin());
 
-        Picasso.with(context).load(u.getAvatar_url()).resize(40,40).into(avatarImageView);
+        //Transformacion
+        Picasso.with(context).load(u.getAvatar_url()).into(avatarImageView);
 
 
 

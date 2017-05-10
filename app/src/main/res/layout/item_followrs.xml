@@ -4,8 +4,8 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         app:srcCompat="@mipmap/ic_launcher"
         android:layout_marginLeft="21dp"
         android:layout_marginStart="21dp"
@@ -20,9 +20,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/textViewLogin"
         android:textAlignment="textStart"
-        android:textStyle="normal|bold"
+        android:textStyle="normal|bold|italic"
         android:layout_marginBottom="15dp"
         android:layout_alignBottom="@+id/imageViewAvatar"
         android:layout_toRightOf="@+id/imageViewAvatar"
-        android:layout_toEndOf="@+id/imageViewAvatar" />
+        android:layout_toEndOf="@+id/imageViewAvatar"
+        android:textSize="18sp" />
 </RelativeLayout>
